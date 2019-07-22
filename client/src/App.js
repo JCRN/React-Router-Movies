@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router'
-
+import Movie from './Movies/Movie'
+import MovieList from './Movies/MovieList'
 import SavedList from './Movies/SavedList';
 
 const App = () => {
