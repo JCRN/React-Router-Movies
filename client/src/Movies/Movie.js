@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React, { useState, useEffect } from "react"
+import axios from "axios"
 
 const Movie = props => {
   const [movie, setMovie] = useState()
-  console.log('Movie props: ', props)
+  console.log("Movie props: ", props)
 
   useEffect(() => {
     const id = props.match.params.id
@@ -18,7 +18,7 @@ const Movie = props => {
       .catch(error => {
         console.error(error)
       })
-  }, [])
+  }, [props.match.params.id])
 
   // Uncomment this only when you have moved on to the stretch goals
   // const saveMovie = () => {
